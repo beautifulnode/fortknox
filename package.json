@@ -2,6 +2,7 @@
   "author": "Tom Wilson <tom@jackhq.com>",
   "name": "fortknox",
   "description": "An Enhancement Wrapper around knox the AWS s3 module",
+  "keywords": ["create bucket", "create website", "activate policy", "s3", "amazon web services"]
   "version": "0.1.0",
   "repository": {
     "type": "git",

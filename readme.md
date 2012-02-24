@@ -123,4 +123,4 @@ Pull Requests welcome!
 
 ## Thanks to
 
-* [visionmedia](http://github.com/visionmedia) for creating knox
+* [learnbo0st](https://github.com/LearnBoost/knox) for creating knox

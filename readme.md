@@ -124,3 +124,7 @@ Pull Requests welcome!
 ## Thanks to
 
 * [learnbo0st](https://github.com/LearnBoost/knox) for creating knox
+
+## License
+
+see LICENSE

@@ -3,13 +3,7 @@ assert = require 'assert'
 nock = require 'nock'
 
 describe 'createBucket', ->
-  nock("http://www.foobar.com.s3.amazonaws.com").delete("/").reply 200, "", 
-    'x-amz-id-2': 'q6yhYf5H92KUtyCjQ4aAwBWMREfHsDtDpVfPFpglHFpin2crOs3PGHq7ZtbvSkge',
-    'x-amz-request-id': '92F09D01D33FE4F0',
-    date: 'Wed, 22 Feb 2012 02:18:40 GMT',
-    location: '/www.foobar.com',
-    'content-length': '0',
-    server: 'AmazonS3' 
+  nock("http://www.foobar.com.s3.amazonaws.com").delete("/").reply 200, "", {}
 
   getClient = ->
     fortknox.createClient

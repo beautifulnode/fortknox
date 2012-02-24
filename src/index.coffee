@@ -35,7 +35,7 @@ knox.prototype.createWebSite = (fn) ->
     <Key>404.html</Key>
   </ErrorDocument>
 </WebsiteConfiguration>
-    """
+  """
   req.end()
 
 # createWebsite from client.options.
@@ -71,6 +71,7 @@ knox.prototype.activatePolicy = (fn) ->
 # @api public
 knox.prototype.deactivatePolicy = (fn) ->
   req = this.request 'DELETE', '/?policy', {}
+  req.on 'response', (resp) -> fn null, resp
   req.end()
 
 module.exports = knox

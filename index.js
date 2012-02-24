@@ -65,6 +65,9 @@ knox.prototype.activatePolicy = function(fn) {
 knox.prototype.deactivatePolicy = function(fn) {
   var req;
   req = this.request('DELETE', '/?policy', {});
+  req.on('response', function(resp) {
+    return fn(null, resp);
+  });
   return req.end();
 };
 

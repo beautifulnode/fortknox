@@ -3,7 +3,7 @@
   "name": "fortknox",
   "description": "An Enhancement Wrapper around knox the AWS s3 module",
   "keywords": ["create bucket", "create website", "activate policy", "s3", "amazon web services"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/twilson63/fortknox.git"
@@ -13,7 +13,7 @@
     "test": "mocha"
   },
   "engines": {
-    "node": "0.6 || 0.7 || 0.8"
+    "node": "*"
   },
   "dependencies": {
     "knox": "*"
